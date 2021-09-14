@@ -1,0 +1,263 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+</head>
+
+<body>
+<style>
+
+
+::placeholder {
+  color: blue;
+  opacity: 1; 
+}
+
+select{
+  width: 230px;
+  height: 50px;
+  padding: 20px;
+  color: blue;
+}
+select option { color: black; }
+select option:first-child{
+  color: black;
+}
+
+
+body
+{
+ margin:0 auto;
+ padding:0px;
+ text-align:center;
+ width:100%;
+ font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+ background-color:#aeb5f1;
+}
+
+input[type=text], select, textarea {
+  width: 70%;
+  padding: 12px;
+ 
+  border: 1px solid #ccc;
+border-color: #0000FF;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  resize: vertical;
+}
+
+
+
+
+
+
+
+
+
+
+#wrapper
+{
+ margin:0 auto;
+ padding:0px;
+ text-align:center;
+ width:995px;	
+}
+#wrapper h1
+{
+ margin-top:50px;
+ font-size:45px;
+ color: Blue;
+}
+#wrapper h1 p
+{
+ font-size:18px;
+}
+#contact_form_div
+{
+ width:330px;
+ margin-left:320px;
+ padding:10px;
+ background-color:White;
+}
+#contact_form_div #contact_label
+{
+ margin:15px;
+ margin-bottom:30px;
+ font-size:25px;
+ font-weight:bold;
+ color:Blue;
+}
+#contact_form_div input[type="text"]
+{
+
+ width:230px;
+ height:40px;
+color: Black;
+ border-radius:2px;
+ font-size:17px;
+ padding-left:5px;
+ 
+}
+#contact_form_div textarea
+{
+ width:230px;
+ height:70px;
+ border-radius:2px;
+ font-size:17px;
+ padding5px;
+}
+
+#contact_form_div input[type="submit"]
+{
+ color: white;
+  padding: 12px 20px;
+ width:230px;
+ height:40px;
+ border:none;
+ border-radius:4px;
+ font-size:17px;
+ background-color: Blue;
+ font-weight:bold;
+cursor:pointer;
+
+}
+#contact_form_div input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+@media only screen and (min-width:700px) and (max-width:995px)
+{
+ #wrapper
+ {
+  width:100%;
+ }
+ #wrapper h1
+ {
+  font-size:30px;
+ }
+ #contact_form_div
+ {
+  width:50%;
+  margin-left:25%;
+  padding-left:0px;
+  padding-right:0px;
+ }
+ #contact_form_div input[type="text"]
+ {
+  width:80%;
+ }
+ #contact_form_div textarea
+ {
+  width:80%;
+ }
+ #contact_form_div input[type="submit"]
+ {
+  width:80%;
+ }
+
+
+}
+@media only screen and (min-width:400px) and (max-width:699px)
+{
+ #wrapper
+ {
+  width:100%;
+ }
+ #wrapper h1
+ {
+  font-size:30px;
+ }
+ #contact_form_div
+ {
+  width:60%;
+  margin-left:20%;
+ }
+ #contact_form_div input[type="text"]
+ {
+  width:80%;
+ }
+ #contact_form_div textarea
+ {
+  width:80%;
+ }
+ #contact_form_div input[type="submit"]
+ {
+  width:80%;
+ }
+
+}
+@media only screen and (min-width:100px) and (max-width:399px)
+{
+ #wrapper
+ {
+  width:100%;
+ }
+ #wrapper h1
+ {
+  font-size:25px;
+ }
+ #contact_form_div
+ {
+  width:90%;
+  margin-left:5%;
+  padding-left:0px;
+  padding-right:0px;
+ }
+ #contact_form_div input[type="text"]
+ {
+  width:80%;
+ }
+ #contact_form_div textarea
+ {
+  width:80%;
+ }
+ #contact_form_div input[type="submit"]
+ {
+  width:80%;
+ }
+
+}
+</style>
+<div id="wrapper">
+
+<div id="contact_form_div">
+ <p id="contact_label">Contact Support</p>
+ <form method="post" action="">
+
+  <p><input type="text" placeholder="First Name"></p>
+  <p><input type="text" placeholder="Email"></p>
+  <p><input type="text" placeholder="Phone"></p>
+<select id="Choose an Issue"  >
+<option value="choose an issue">Choose an Issue</option>
+      <option value="not working properly">Not Working Properly</option>
+      <option value="showing error">Showing Error</option>
+      
+    </select>
+
+
+  <p><textarea placeholder="Let us know what you need help with..."  style="height:100px"></textarea></p>
+<p><input type="Submit" placeholder="Submit"  ></p>
+<p onclick="changeText(this)">Submit</p>
+
+<script>
+function changeText(id) {
+ id.style.color="#006400";
+  id.innerHTML = "Thanks for Submitting!";
+
+}
+</script>
+
+ </form>
+</div>
+
+</div>
+
+
+
+
+  
+
+
+</body>
+</html>
