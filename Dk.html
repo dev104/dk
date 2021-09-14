@@ -1,0 +1,493 @@
+<html>
+<head>
+<style>
+thead {color:Black;}
+thead  {background-color:Blue;}
+tbody {color:#008000;}
+tbody{background-color:#90EE90;}
+table, th, td {
+border: 1px solid Red;
+}
+</style>
+
+
+
+<title>DK</title>
+</head>
+<body>
+<table style="width: 45%">
+<h1>My Table</h1>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<p><button onclick="sortTable()">Sort</button></p>
+<p><button type="button">Click</button></p>
+
+<table id="myTable">
+  <tr class="header">
+
+</tr>
+<thead>
+<tr>
+
+<th>Member id</th>
+<th>Firstname</th>
+<th>Lastname</th>
+
+<th>Address</th>
+<th>City</th>
+<th>Ph.no</th>
+</tr>
+</thead>
+
+<tr>
+<td>100001</td>
+<td>Anu</td>
+<td>Parthiban</td>
+<td>No. 7 Narayanan street</td>
+<td>Vellore</td>
+<td>9874561230</td>
+</tr>
+<tr>
+<td>100002</td>
+<td>Arthi</td>
+<td>Ganesh</td>
+<td>No. 12/3 Vinayaga street</td>
+<td>Chennai</td>
+<td>9874561302</td>
+</tr>
+<tr>
+<td>100003</td>
+<td>Anbu</td>
+<td>Kathir</td>
+<td>No. 14 Harish street</td>
+<td>Chennai</td>
+<td>9874365210</td>
+</tr>
+<tr>
+<td>100004</td>
+<td>Alex</td>
+<td>Parthiban</td>
+<td>No. 7 Shiva street</td>
+<td>Vellore</td>
+<td>8974561230</td>
+</tr>
+<tr>
+<td>100005</td>
+<td>Amirtha</td>
+<td>Murali</td>
+<td>No. 42 Narayanan street</td>
+<td>Kanchipuram</td>
+<td>9875461230</td>
+</tr>
+<tr>
+<td>100006</td>
+<td>Bala</td>
+<td>Vignesh</td>
+<td>No.89 Kupan street</td>
+<td>Kanchipuram</td>
+<td>9874568975</td>
+</tr>
+<tr>
+<td>100007</td>
+<td>Bala</td>
+<td>Parthiban</td>
+<td>No.65 Vinayagam street</td>
+<td>Vellore</td>
+<td>9865561230</td>
+</tr>
+<tr>
+<td>100008</td>
+<td>Bala</td>
+<td>Kumar</td>
+<td>No. 82 Sivanesha street</td>
+<td>Villupuram</td>
+<td>9868582510</td>
+</tr>
+<tr>
+<td>100009</td>
+<td>Bharathi</td>
+<td>Siva</td>
+<td>No. 15 SS Avenue</td>
+<td>Vellore</td>
+<td>7894561230</td>
+</tr>
+<tr>
+<td>100010</td>
+<td>Banu</td>
+<td>Priya</td>
+<td>No. 7 Narayanan street</td>
+<td>Cuddalore</td>
+<td>9782564310</td>
+</tr>
+<tr>
+<td>100011</td>
+<td>Bheem</td>
+<td>Sena</td>
+<td>No. 7 Sankaran street</td>
+<td>Chennai</td>
+<td>9587460213</td>
+</tr>
+<tr>
+<td>100012</td>
+<td>Chitra</td>
+<td>Venkat</td>
+<td>No. 56 Kumaresan street</td>
+<td>Kanchipuram</td>
+<td>7789456123</td>
+</tr>
+<tr>
+<td>100013</td>
+<td>Chitra</td>
+<td>Kumar</td>
+<td>No. 63 Allah street</td>
+<td>Vellore</td>
+<td>9265873014</td>
+</tr>
+<tr>
+<td>100014</td>
+<td>Chinna</td>
+<td>Parthiban</td>
+<td>No. 25 Kumaran street</td>
+<td>Ranipet</td>
+<td>987435260</td>
+</tr>
+<tr>
+<td>100015</td>
+<td>Deva</td>
+<td>Sena</td>
+<td>No. 14 Thiruvalluvar street</td>
+<td>Vellore</td>
+<td>8056730048</td>
+</tr>
+<tr>
+<td>100016</td>
+<td>Devi</td>
+<td>Parthiban</td>
+<td>No. 56 Anna street</td>
+<td>Cuddalore</td>
+<td>9825613470</td>
+</tr>
+<tr>
+<td>100017</td>
+<td>Divya</td>
+<td>Priyan</td>
+<td>No. 56 Anna Nagar</td>
+<td>Chennai</td>
+<td>9784563210</td>
+</tr>
+<tr>
+<td>100018</td>
+<td>Dhivya</td>
+<td>Karthik</td>
+<td>No. 85 Vinayaga street </td>
+<td>Cuddalore</td>
+<td>9752361045</td>
+</tr>
+<tr>
+<td>100019</td>
+<td>Dhina</td>
+<td>Parthiban</td>
+<td>No. 78 Thiruvalluvar street</td>
+<td>Ranipet</td>
+<td>8756493021</td>
+</tr>
+<tr>
+<td>100020</td>
+<td>Elangovan</td>
+<td>Annamalai</td>
+<td>No. 87 Ranbir street</td>
+<td>Chennai</td>
+<td>9825613580</td>
+</tr>
+<tr>
+<td>100021</td>
+<td>Essaki</td>
+<td>Muthu</td>
+<td>No. 25 Avenue street</td>
+<td>Chennai</td>
+<td>9822513470</td>
+</tr>
+<tr>
+<td>100022</td>
+<td>Essaki</td>
+<td>Raj</td>
+<td>No. 45 Bheem street</td>
+<td>Madurai</td>
+<td>9825363470</td>
+</tr>
+<tr>
+<td>100023</td>
+<td>Eswari</td>
+<td>Kumaran</td>
+<td>No. 23 Vannam street</td>
+<td>Cuddalore</td>
+<td>9825613330</td>
+</tr>
+<tr>
+<td>100024</td>
+<td>Fraz</td>
+<td>Khan</td>
+<td>No. 36 Aheem street</td>
+<td>Vellore</td>
+<td>9125613470</td>
+</tr>
+<tr>
+<td>100025</td>
+<td>Freez</td>
+<td>Parthiban</td>
+<td>No. 89 Thanthi street</td>
+<td>Cuddalore</td>
+<td>9925613470</td>
+</tr>
+<tr>
+<td>100026</td>
+<td>Ganesh</td>
+<td>Kumar</td>
+<td>No. 63 Devi street</td>
+<td>Villupuram</td>
+<td>9826613470</td>
+</tr>
+<tr>
+<td>100027</td>
+<td>Ganesh</td>
+<td>Parthiban</td>
+<td>No. 99 Palani street</td>
+<td>Madurai</td>
+<td>9825666470</td>
+</tr>
+<tr>
+<td>100028</td>
+<td>Gnana</td>
+<td>Moorthy</td>
+<td>No. 56 Axe street</td>
+<td>Chennai</td>
+<td>9825614470</td>
+</tr>
+<tr>
+<td>100029</td>
+<td>Hirthik</td>
+<td>Pandya</td>
+<td>No. 65 Avenue street</td>
+<td>Mumbai</td>
+<td>9825613440</td>
+</tr>
+<tr>
+<td>100030</td>
+<td>Issaki</td>
+<td>Parthiban</td>
+<td>No. 666 Anna street</td>
+<td>Madurai</td>
+<td>9825614470</td>
+</tr>
+<tr>
+<td>100031</td>
+<td>Jack</td>
+<td>Rose</td>
+<td>No. 66 Anbu street</td>
+<td>Chennai</td>
+<td>9825614470</td>
+</tr>
+<tr>
+<td>100032</td>
+<td>Jaya</td>
+<td>Karthik</td>
+<td>No. 63 Ganesha street</td>
+<td>Vellore</td>
+<td>9825993470</td>
+</tr>
+<tr>
+<td>100033</td>
+<td>Jaya</td>
+<td>Parthiban</td>
+<td>No. 56 Nirmal street</td>
+<td>Kanyakumari</td>
+<td>9855613470</td>
+</tr>
+<tr>
+<td>100034</td>
+<td>Keerthana</td>
+<td>Murugan</td>
+<td>No. 96 Anna street</td>
+<td>Chennai</td>
+<td>9825614470</td>
+</tr>
+<tr>
+<td>100035</td>
+<td>Keerthana</td>
+<td>Parthiban</td>
+<td>No. 56 Lemo street</td>
+<td>Villupuram</td>
+<td>9825613440</td>
+</tr>
+<tr>
+<td>100036</td>
+<td>Kavin</td>
+<td>Rocky</td>
+<td>No. 56 Hima street</td>
+<td>Chennai</td>
+<td>9885613470</td>
+</tr>
+<tr>
+<td>100037</td>
+<td>Kaveen</td>
+<td>Naveen</td>
+<td>No. 89 Fiz street</td>
+<td>Madurai</td>
+<td>9825613370</td>
+</tr>
+<tr>
+<td>100038</td>
+<td>Kiruba</td>
+<td>Karan</td>
+<td>No. 96 Anjali street</td>
+<td>Cuddalore</td>
+<td>9825613460</td>
+</tr>
+<tr>
+<td>100039</td>
+<td>Lekha</td>
+<td>Parthiban</td>
+<td>No. 71 Kind street</td>
+<td>Madurai</td>
+<td>9822613470</td>
+</tr>
+<tr>
+<td>100040</td>
+<td>Linga</td>
+<td>Kumar</td>
+<td>No. 63 Thivan street</td>
+<td>Kanyakumari</td>
+<td>9825613400</td>
+</tr>
+<tr>
+<td>100041</td>
+<td>Mithra</td>
+<td>Kumar</td>
+<td>No. 11 King street</td>
+<td>Ariyalur</td>
+<td>9825610470</td>
+</tr>
+<tr>
+<td>100042</td>
+<td>Mithran</td>
+<td>Naveen</td>
+<td>No. 65 Ravi street</td>
+<td>Chennai</td>
+<td>9825613370</td>
+</tr>
+<tr>
+<td>100043</td>
+<td>Naveen</td>
+<td>Kumar</td>
+<td>No. 78 Avenue street</td>
+<td>Ooty</td>
+<td>9826613470</td>
+</tr>
+<tr>
+<td>100044</td>
+<td>Nirmal</td>
+<td>Kumar</td>
+<td>No. 63 Kavin street</td>
+<td>Chennai</td>
+<td>9825614470</td>
+</tr>
+<tr>
+<td>100045</td>
+<td>Nivedha</td>
+<td>Priya</td>
+<td>No. 65 Diya street</td>
+<td>Madurai</td>
+<td>8825613470</td>
+</tr>
+
+<tr>
+<td>100046</td>
+<td>Priya</td>
+<td>Parthiban</td>
+<td>No. 99 Avenue street</td>
+<td>Ariyalur</td>
+<td>9825513470</td>
+</tr>
+<tr>
+<td>100047</td>
+<td>Priya</td>
+<td>Anbu</td>
+<td>No. 58 Thiruvalluvar street</td>
+<td>Cuddalore</td>
+<td>9825523370</td>
+</tr>
+<tr>
+<td>100048</td>
+<td>Queen</td>
+<td>Mary</td>
+<td>No. 36 Avenue street</td>
+<td>Chennai</td>
+<td>9825514470</td>
+</tr>
+<tr>
+<td>100049</td>
+<td>Ram</td>
+<td>Kumar</td>
+<td>No. 72 Thiru street</td>
+<td>Chennai</td>
+<td>9825513770</td>
+</tr>
+<tr>
+<td>100050</td>
+<td>Ram</td>
+<td>Prasad</td>
+<td>No. 87 Dk street</td>
+<td>Vellore</td>
+<td>9825510470</td>
+</tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+<script>
+function sortTable() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("myTable");
+  switching = true;
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 2; i < (rows.length - 2); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("TD")[1];
+      y = rows[i + 1].getElementsByTagName("TD")[1];
+         if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+  
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+</script>
+
+</body>
+</html>
